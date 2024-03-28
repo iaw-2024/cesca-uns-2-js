@@ -4,11 +4,6 @@ const express = require('express')
 const app = express()
 
 
-//app.get devuelve un html
-
-/*app.get('/express', (req, res) => {
-    res.sendFile("public/express/index.html", { root: '.' }); // Enviar el archivo HTML
-});*/
 
 const datos = [
     { nombre: "Juan", edad: 30, email: "juan@example.com" },
@@ -24,12 +19,6 @@ function generarTabla(datos) {
     tablaHTML += '</tbody></table>';
     return tablaHTML;
 }
-
-/*// Ruta para enviar la tabla de datos
-app.get('/express', (req, res) => {
-    const tabla = generarTabla(datos);
-    res.send(tabla);
-});*/
 
 const fs = require("fs");
 
@@ -50,8 +39,6 @@ app.get("/express", (req, res) => {
         res.send(modifiedHTML);
     });
 });
-
-
 
 
 module.exports=app
