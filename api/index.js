@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
-const expressApp = require("../public/express/express.js" ); // Importar la aplicación Express configurada en express.js
+const path = require('path');
+const expressApp = require(path.resolve(__dirname, '../src/express.js' ) ); // Importar la aplicación Express configurada en express.js
 
 app.use(expressApp);
 
