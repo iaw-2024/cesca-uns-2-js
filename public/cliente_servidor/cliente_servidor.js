@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("http://localhost:3001/datos")
         .then(response => response.json())
         .then(data => {
-             // Obtener el cuerpo de la tabla donde insertaremos los datos
+             // Obtener el cuerpo de la tabla donde insertaremos los datoss
              const tablaDatos = document.getElementById("tablaDatos").getElementsByTagName('tbody')[0];
 
              // Iterar sobre los datos y crear filas para cada uno
