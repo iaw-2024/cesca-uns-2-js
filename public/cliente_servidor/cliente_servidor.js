@@ -1,21 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     const tablaBody = document.getElementById("datosBody");
-
-
-    // Obtener los datos del servidor
-    //fetch("http://localhost:3001/datos")
-    /*let serverUrl;
-
-    if (process.env.NODE_ENV === 'production') {
-        // Si está en producción (Vercel)
-        serverUrl = 'https://cesca-uns-2-js.vercel.app';
-    } else {
-        // Si está en desarrollo (local)
-        serverUrl = 'http://localhost:3001';
-}
-    fetch('${serverUrl}/datos')*/
-    //fetch('https://cesca-uns-2-js.vercel.app/datos')
+    
     fetch('/datos')
     .then(response => response.json())
         .then(data => {

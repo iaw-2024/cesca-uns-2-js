@@ -1,4 +1,4 @@
-// an express application that shows a item list
+/// an express application that shows a item list
 
 const express = require('express')
 const app = express()
