@@ -10,7 +10,7 @@ app.use(expressApp);
 app.use(express.static('public'));
 
 app.get("/cliente_servidor", (req, res) => {
-    res.sendFile("./public/cliente_servidor/index.html", { root: '.' });
+    res.sendFile("/public/cliente_servidor/index.html", { root: '.' });
 });
 
 app.get("/datos", (req, res) => {
