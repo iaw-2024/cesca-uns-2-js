@@ -4,8 +4,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     // Obtener los datos del servidor
-    fetch("http://localhost:3001/datos")
-        .then(response => response.json())
+    //fetch("http://localhost:3001/datos")
+    /*let serverUrl;
+
+    if (process.env.NODE_ENV === 'production') {
+        // Si está en producción (Vercel)
+        serverUrl = 'https://cesca-uns-2-js.vercel.app';
+    } else {
+        // Si está en desarrollo (local)
+        serverUrl = 'http://localhost:3001';
+}
+    fetch('${serverUrl}/datos')*/
+    fetch('https://cesca-uns-2-js.vercel.app/datos')
+    .then(response => response.json())
         .then(data => {
              // Obtener el cuerpo de la tabla donde insertaremos los datoss
              const tablaDatos = document.getElementById("tablaDatos").getElementsByTagName('tbody')[0];
