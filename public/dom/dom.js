@@ -4,7 +4,7 @@
 //cliente servidor: el servidor provee informacion y el front end la muestra. El express expone al json como una api para consumir la informacion y renderizar 
 document.addEventListener("DOMContentLoaded", function() {
     // Cargar el archivo JSON
-    fetch("datos.json")
+    fetch("/dom/datos.json")
         .then(response => response.json())
         .then(data => {
             // Obtener el cuerpo de la tabla donde insertaremos los datos
