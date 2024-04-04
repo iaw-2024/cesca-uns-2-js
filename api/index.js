@@ -15,7 +15,7 @@ app.get("/cliente_servidor", (req, res) => {
 });
 
 app.get("/datos", (req, res) => {
-    res.sendFile("./public/dom/datos.json", { root: '.' });
+    res.sendFile(path.resolve(__dirname, '../public/dom/datos.json'));
 });
 
 
